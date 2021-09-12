@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Contact Jordi Voeten</title>
+    <link rel='stylesheet'href='styles.css' />
+  </head>
+  <body>
+    <div class='page'>
+
+      <header class='menu-header'>
+            <div><a href='index.html'>Home</a></div>
+            <div><a href='topic.html'>Interesting topic!</a></div>
+            <div><a href='contact.html'>Contact</a></div>
+      </header>
+
+      <article class='contact-form'>
+        <h2>Contact Jordi</h2>
+        <p>
+          Fill out the form below and click the send button!
+          Sadly enough my knowledge isn't yet sufficient to actually
+          send the email.
+        </p>
+      </article>
+      <form action='' method='get'class='contact-form'>
+        <div class='form-row'>
+          <label for='full-name'>Name</label>
+          <input id='full-name' name='full-name' type='text' />
+        </div>
+        <div class='form-row'>
+          <label for='email'>Email</label>
+          <input id='email'
+                 name='email'
+                 type='email'
+                 placeholder='name@example.com'/>
+        </div>
+        <fieldset class='legacy-form-row'>
+          <legend>Type of message:</legend>
+          <input id='message-type-1'
+                 name='message'
+                 type='radio'
+                 value='Business' />
+          <label for='message-type-1' class='radio-label'>Business</label>
+          <input id='message-type-2'
+                 name='message'
+                 type='radio'
+                 value='Casual' />
+          <label for='message-type-2' class='radio-label'>Casual</label>
+        </fieldset>
+        <div class='form-row'>
+          <label for='message'>Message</label>
+          <textarea id='message' name='message'></textarea>
+          <div class='instructions'>
+            Your message can contain 500 words or less.
+          </div>
+        </div>
+        <div class='form-row'>
+          <button>Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
